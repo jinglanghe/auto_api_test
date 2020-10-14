@@ -66,11 +66,11 @@ from datetime import timedelta
 import unittest
 import uuid
 import random
-from testCase import vesionbook_mall as mall
+from testCase import aiarts as aiarts
 from com import common
 from com import configDB
 from com import readConfig
-sr = mall.SaveResult()
+sr = aiarts.SaveResult()
 
 
 class Token(unittest.TestCase):
@@ -104,7 +104,7 @@ class Token(unittest.TestCase):
         _lastMonthEnd = str(last_month_end)
         
         _expected_result = %s
-        respCode_input = str(%s)
+        respCode_input = '%s'
         
         key_sql = %s
         if key_sql == "null" or key_sql ==None:
@@ -128,8 +128,6 @@ class Token(unittest.TestCase):
         r_json = r.json()
         print("r_json {}".format(r_json))
 
-        respMessage = r_json["respMessage"]
-        print(respMessage)
         r_status = r.status_code
         r_resp_code = str(r_json["respCode"])
         if r_resp_code != respCode_input or r_status != 200:

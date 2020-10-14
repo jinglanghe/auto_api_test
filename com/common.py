@@ -26,27 +26,16 @@ class Common(object):
     #     log.debug("get token message: %s" %res.text)
     #     return res
 
-    def get_jtoken(self):
-        url = readConfig.ReadBaseConfig().get_http_config('baseurl') + "/login"
-        payload = "username=superuser&password=e10adc3949ba59abbe56e057f20f883e&grant_type=password&scope=read%20write"
-        headers = {
-            'Content-Type': "application/x-www-form-urlencoded"
-        }
-        response = requests.request("POST", url, data=payload, headers=headers)
-        jtokenString = response.json()['data']['jtoken']
-        jtoken = 'Bearer ' + jtokenString
-        return jtoken
-
     def get_token(self):
-        tokenURL = readConfig.ReadBaseConfig().get_http_config('baseurl_user') + "/authority/oauth/token"
+        tokenURL = readConfig.ReadBaseConfig().get_http_config('baseurl_user') + "/custom-user-dashboard-backend/auth/login"
 
-        payload = "username=ylzx&password=e10adc3949ba59abbe56e057f20f883e&grant_type=password&scope=read%20write"
-        headers = {
-            'Content-Type': "application/x-www-form-urlencoded"
-        }
-        response = requests.request("POST", tokenURL, data=payload, headers=headers)
+        payload = {"userName":"admin","password":"e10adc3949ba59abbe56e057f20f883e"}
+        headers = {'Content-Type': "application/json"}
+        response = requests.request("POST", tokenURL, json=payload, headers=headers)
         # log.debug("get token message: %s" % response.text)  #下次注释掉
-        token = 'Bearer ' + str(response.json()['access_token'])
+        # print(response.cookies.items()[0][1])
+        # print(type(response.cookies))
+        token = str(response.cookies.items()[0][1])
         return token
 
 

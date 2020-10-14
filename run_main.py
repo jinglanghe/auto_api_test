@@ -97,6 +97,6 @@ class RunMain(object):
 if __name__ == "__main__":
 
     RunMain().prepare_test()
-    RunMain().run()
-    RunMain().delete_test()
+    # RunMain().run()
+    # RunMain().delete_test()
 
