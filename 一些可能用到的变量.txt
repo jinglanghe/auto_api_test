@@ -1,0 +1,9 @@
+_randString        #随机字符串，uuid的后8位
+_randInt        #随机整数，0到100
+_today        #今天的日期。日期如无特殊说明，格式为YYYY-mm-dd
+_yesterday        #昨天的日期
+_8DaysAgo        #八天前的日期，和昨天刚好凑成一周
+_lastWeekStart       #上周的周一 
+_lastWeekEnd        #上周的周日
+_lastMonthStart       #上月的第一天 
+_lastMonthEnd        #上月的最后一天
