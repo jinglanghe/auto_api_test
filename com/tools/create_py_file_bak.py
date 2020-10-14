@@ -104,6 +104,7 @@ class Token(unittest.TestCase):
         _lastMonthEnd = str(last_month_end)
         
         _expected_result = %s
+        respCode_input = '%s'
         
         key_sql = %s
         if key_sql == "null" or key_sql ==None:
@@ -127,11 +128,9 @@ class Token(unittest.TestCase):
         r_json = r.json()
         print("r_json {}".format(r_json))
 
-        respMessage = r_json["respMessage"]
-        print(respMessage)
         r_status = r.status_code
         r_resp_code = str(r_json["respCode"])
-        if r_resp_code != mall.SUCCESS_CODE or r_status != 200:
+        if r_resp_code != respCode_input or r_status != 200:
             self._flag = "fail"
         
         sql = %s
@@ -163,17 +162,17 @@ class Token(unittest.TestCase):
                     
         
         datas = [url, "%s", str(payload), str(r_json), 
-        "resp_code="+ str(mall.SUCCESS_CODE)+ "\\nstatus=200", sql_judge, api_judge, self._flag, r_time]
+        "resp_code="+ str(respCode_input)+ "\\nstatus=200", sql_judge, api_judge, self._flag, r_time]
         sr.save_result(datas)
         
-        self.assertEqual(r_resp_code, mall.SUCCESS_CODE, msg="返回的状态码不等于"+str(mall.SUCCESS_CODE))
+        self.assertEqual(r_resp_code, respCode_input, msg="返回的状态码不等于"+str(respCode_input)+"\\n"+str(r_json))
         self.assertEqual(_expected_result, sql_judge, msg="Excel填写的预期结果为："+_expected_result+",与SQL查询结果“"+sql_judge+"”不一致。")
         self.assertEqual(api_judge, sql_judge, msg="接口返回结果为："+api_judge+",与SQL查询结果“"+sql_judge+"”不一致。")
         
 
     if __name__ == "__main__":
         unittest.main()                    
-                        '''%(case_name, case_name, goods, case_id, expected_result, key_sql ,case_url, params, headers, method, sqlSen, api_json_key, api_json_key, case_name))
+                        '''%(case_name, case_name, goods, case_id, expected_result, respCode, key_sql ,case_url, params, headers, method, sqlSen, api_json_key, api_json_key, case_name))
 
 
     def close(self):

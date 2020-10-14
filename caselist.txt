@@ -1,1 +1,1 @@
-test_aiarts_登录接口
+test_aiarts_当前用户接口

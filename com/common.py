@@ -35,7 +35,7 @@ class Common(object):
         # log.debug("get token message: %s" % response.text)  #下次注释掉
         # print(response.cookies.items()[0][1])
         # print(type(response.cookies))
-        token = str(response.cookies.items()[0][1])
+        token = 'Bearer ' + str(response.cookies.items()[0][1])
         return token
 
 
