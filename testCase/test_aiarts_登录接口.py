@@ -26,7 +26,7 @@ class Token(unittest.TestCase):
         # 获取token
 
         _expected_result = None
-        respCode_input = 'true'.lower()
+        respCode_input = readConfig.ReadBaseConfig().get_api_config('response_status_ok')
         
 
         url = readConfig.ReadBaseConfig().get_http_config('baseurl_user') + "/custom-user-dashboard-backend/auth/login"

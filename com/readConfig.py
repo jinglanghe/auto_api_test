@@ -47,6 +47,9 @@ class ReadBaseConfig(object):
         value = self.cf.get("TEXT", name)
         return value
 
+    def get_api_config(self, name):
+        value = self.cf.get("API", name)
+        return value
 
 if __name__ == "__main__":
     rbc = ReadBaseConfig()

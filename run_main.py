@@ -8,6 +8,7 @@ from dateutil import tz
 from com import HTMLTestRunner, readConfig
 from com.log import MyLog as Log
 from com.tools import create_py_file, delete_py_file
+from com import common
 """
 执行器
 """
@@ -94,9 +95,17 @@ class RunMain(object):
     def delete_test(self):
         self.delete = delete_py_file.Delete_py_file().delete_filelist("./testCase")
 
+    def get_token(self):
+        gettoken = common.Common.get_token(self)
+        _token = str(gettoken)
+        with open('./testCase/token.txt', 'w') as f:
+            f.write(_token)
+
 if __name__ == "__main__":
 
-    RunMain().prepare_test()
+    RunMain().get_token()
+    # RunMain().prepare_test()
     # RunMain().run()
     # RunMain().delete_test()
+
 
