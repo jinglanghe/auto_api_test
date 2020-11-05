@@ -22,7 +22,7 @@ class Token(unittest.TestCase):
 
 
     # 当前用户接口
-    def test_aiarts_caseID_1(self):
+    def test_aiarts_caseID_2(self):
         # 获取token
         with open('./token.txt', 'r') as f:
             _token = f.read()

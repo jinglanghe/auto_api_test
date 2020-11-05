@@ -2,7 +2,7 @@
 # coding:utf-8
 
 """
-获取资源
+平台配置
 """
 
 import requests
@@ -19,8 +19,8 @@ class Token(unittest.TestCase):
         self._flag = "pass"
         print("this is setup")
 
-    # 获取资源
-    def test_aiarts_caseID_3(self):
+    # 平台配置
+    def test_aiarts_caseID_4(self):
         # 获取token
         with open('./token.txt', 'r') as f:
             _token = f.read()
@@ -28,10 +28,10 @@ class Token(unittest.TestCase):
         # print(_token)
 
         _expected_result = None
-        respCode_input = readConfig.ReadBaseConfig().get_api_config('response_status_msg_ok')
+        respCode_input = readConfig.ReadBaseConfig().get_api_config('response_status_ok')
 
         url = readConfig.ReadBaseConfig().get_http_config(
-            'baseurl_user') + "/ai_arts/api/common/resources"
+            'baseurl_user') + "/custom-user-dashboard-backend/platform-config"
 
         headers = {"Content-Type": "application/json", "Authorization": _token}
 
@@ -44,15 +44,23 @@ class Token(unittest.TestCase):
         print("r_json {}".format(r_json))
 
         r_status = r.status_code
-        r_resp_code = str(r_json["msg"]).lower()
+        r_resp_code = str(r_json["success"]).lower()
         if r_resp_code != respCode_input or r_status != 200:
             self._flag = "fail"
 
-        datas = [url, "获取资源", str(' '), str(r_json),
+        if 'i18n' not in r_json:
+            self._flag = "fail"
+
+        if 'platformName' not in r_json:
+            self._flag = "fail"
+
+        datas = [url, "平台配置", str(' '), str(r_json),
                  "resp_code=" + str(respCode_input) + "\nstatus=200", ' ', ' ', self._flag, r_time]
         sr.save_result(datas)
 
         self.assertEqual(r_resp_code, respCode_input, msg="返回的状态码不等于" + str(respCode_input) + "\n" + str(r_json))
+        self.assertIsNotNone(r_json['i18n'], msg="i18n语言配置项为空")
+        self.assertIsNotNone(r_json['platformName'], msg="平台名称配置项为空")
 
 
 if __name__ == "__main__":
