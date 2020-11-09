@@ -21,12 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="955bca71-af8a-46c5-9ca2-ac17b6fe7da9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/readConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/readConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/baseConfig.ini" beforeDir="false" afterPath="$PROJECT_DIR$/init/baseConfig.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/operation_excel.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/operation_excel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sheet_name" beforeDir="false" afterPath="$PROJECT_DIR$/sheet_name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCase/test_aiarts_当前用户接口.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_aiarts_当前用户接口.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_aiarts_平台中文cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_aiarts_平台中文cookie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_aiarts_平台英文cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_aiarts_平台英文cookie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testCase/test_aiarts_当前用户接口.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCase/test_aiarts_当前用户.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testResult/test_result.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testResult/test_result.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,29 +61,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_aiarts_获取资源.Token.test_aiarts_caseID_1">
-    <configuration name="run_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="auto-autoAPItest-with-xlsx" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_aiarts_登录接口.Token.test_aiarts_caseID_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for test_aiarts_平台中文cookie.Token.test_aiarts_caseID_5">
+    <configuration name="pytest for testCase.test_aiarts_当前用户.Token" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="auto-autoAPItest-with-xlsx" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -97,23 +74,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_aiarts_登录接口.Token.test_aiarts_caseID_1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_aiarts_当前用户接口.Token.test_aiarts_caseID_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="auto-autoAPItest-with-xlsx" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_aiarts_当前用户接口.Token.test_aiarts_caseID_1&quot;" />
+      <option name="_new_target" value="&quot;testCase.test_aiarts_当前用户.Token&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -165,7 +126,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in test_aiarts_登录接口.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_aiarts_平台配置.Token.test_aiarts_caseID_4" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="auto-autoAPItest-with-xlsx" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -177,17 +138,49 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCase/test_aiarts_登录接口.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <option name="_new_target" value="&quot;test_aiarts_平台配置.Token.test_aiarts_caseID_4&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_aiarts_平台英文cookie.Token.test_aiarts_caseID_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="auto-autoAPItest-with-xlsx" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_aiarts_平台英文cookie.Token.test_aiarts_caseID_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_aiarts_平台中文cookie.Token.test_aiarts_caseID_5" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="auto-autoAPItest-with-xlsx" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCase" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_aiarts_平台中文cookie.Token.test_aiarts_caseID_5&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_aiarts_平台中文cookie.Token.test_aiarts_caseID_5" />
+        <item itemvalue="Python tests.pytest for test_aiarts_平台英文cookie.Token.test_aiarts_caseID_2" />
+        <item itemvalue="Python tests.pytest for test_aiarts_平台配置.Token.test_aiarts_caseID_4" />
         <item itemvalue="Python tests.pytest for test_aiarts_获取资源.Token.test_aiarts_caseID_1" />
-        <item itemvalue="Python tests.pytest for test_aiarts_当前用户接口.Token.test_aiarts_caseID_1" />
-        <item itemvalue="Python.run_main" />
-        <item itemvalue="Python tests.pytest in test_aiarts_登录接口.py" />
-        <item itemvalue="Python tests.pytest for test_aiarts_登录接口.Token.test_aiarts_caseID_1" />
+        <item itemvalue="Python tests.pytest for testCase.test_aiarts_当前用户.Token" />
       </list>
     </recent_temporary>
   </component>
@@ -327,6 +320,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="触发构建" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_平台中文cookie.Token.test_aiarts_caseID_5" timestamp="1604575395350">
+      <screen x="3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_平台中文cookie.Token.test_aiarts_caseID_5/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604575395350" />
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_平台英文cookie.Token.test_aiarts_caseID_2" timestamp="1604575293953">
+      <screen x="3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_平台英文cookie.Token.test_aiarts_caseID_2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604575293953" />
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_平台配置.Token.test_aiarts_caseID_4" timestamp="1604571017874">
+      <screen x="3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_平台配置.Token.test_aiarts_caseID_4/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604571017874" />
     <state x="4734" y="179" key="#pytest_for_test_aiarts_当前用户接口.Token.test_aiarts_caseID_1" timestamp="1604568174245">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
@@ -336,30 +341,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="894" y="179" key="#pytest_for_test_aiarts_登录接口.Token.test_aiarts_caseID_1/3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603089162316" />
-    <state x="4734" y="179" key="#pytest_for_test_aiarts_获取资源.Token.test_aiarts_caseID_1" timestamp="1604570003001">
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_获取资源.Token.test_aiarts_caseID_1" timestamp="1604570233438">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4734" y="179" key="#pytest_for_test_aiarts_获取资源.Token.test_aiarts_caseID_1/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604570003001" />
-    <state width="2505" height="413" key="GridCell.Tab.0.bottom" timestamp="1604570003815">
+    <state x="4734" y="179" key="#pytest_for_test_aiarts_获取资源.Token.test_aiarts_caseID_1/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604570233438" />
+    <state width="2505" height="413" key="GridCell.Tab.0.bottom" timestamp="1604655274640">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state width="2505" height="1058" key="GridCell.Tab.0.bottom/3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603168127997" />
-    <state width="2505" height="413" key="GridCell.Tab.0.bottom/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604570003815" />
-    <state width="2505" height="413" key="GridCell.Tab.0.center" timestamp="1604570003815">
+    <state width="2505" height="413" key="GridCell.Tab.0.bottom/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604655274640" />
+    <state width="2505" height="413" key="GridCell.Tab.0.center" timestamp="1604655274640">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state width="2505" height="1058" key="GridCell.Tab.0.center/3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603168127997" />
-    <state width="2505" height="413" key="GridCell.Tab.0.center/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604570003815" />
-    <state width="2505" height="413" key="GridCell.Tab.0.left" timestamp="1604570003815">
+    <state width="2505" height="413" key="GridCell.Tab.0.center/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604655274640" />
+    <state width="2505" height="413" key="GridCell.Tab.0.left" timestamp="1604655274640">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state width="2505" height="1058" key="GridCell.Tab.0.left/3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603168127997" />
-    <state width="2505" height="413" key="GridCell.Tab.0.left/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604570003815" />
-    <state width="2505" height="413" key="GridCell.Tab.0.right" timestamp="1604570003815">
+    <state width="2505" height="413" key="GridCell.Tab.0.left/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604655274640" />
+    <state width="2505" height="413" key="GridCell.Tab.0.right" timestamp="1604655274640">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state width="2505" height="1058" key="GridCell.Tab.0.right/3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1603168127997" />
-    <state width="2505" height="413" key="GridCell.Tab.0.right/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604570003815" />
+    <state width="2505" height="413" key="GridCell.Tab.0.right/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1604655274640" />
     <state x="650" y="258" key="SettingsEditor" timestamp="1598605381967">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

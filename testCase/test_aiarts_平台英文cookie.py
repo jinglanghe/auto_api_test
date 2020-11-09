@@ -52,7 +52,7 @@ class Token(unittest.TestCase):
         datas = [url, "平台英文cookie", str(' '), str('no response json'), "status=200", ' ', ' ', self._flag, r_time]
         sr.save_result(datas)
 
-        self.assertEqual(cookies_language, 'en-US', msg="返回的cookie语言不是en-US")
+        self.assertEqual(cookies_language, 'en-US', msg="返回的cookie语言配置不是en-US")
 
         
 

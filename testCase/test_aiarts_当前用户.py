@@ -3,7 +3,7 @@
 # coding:utf-8
 
 """
-当前用户接口
+当前用户
 """
 
 import requests
@@ -21,7 +21,7 @@ class Token(unittest.TestCase):
 
 
 
-    # 当前用户接口
+    # 当前用户
     def test_aiarts_caseID_2(self):
         # 获取token
         with open('./token.txt', 'r') as f:
@@ -50,7 +50,7 @@ class Token(unittest.TestCase):
             self._flag = "fail"
 
 
-        datas = [url, "当前用户接口", str(' '), str(r_json),
+        datas = [url, "当前用户", str(' '), str(r_json),
         "resp_code="+ str(respCode_input)+ "\nstatus=200", ' ', ' ', self._flag, r_time]
         sr.save_result(datas)
 
